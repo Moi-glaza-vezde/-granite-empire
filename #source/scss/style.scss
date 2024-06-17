@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
+@import 'nullstylescc.scss';
+@import 'header.scss';
+@import 'header-nav.scss';
+@import 'advantages.scss';
+@import 'types-services.scss';
+@import 'range.scss';
+@import 'company-info.scss';
+@import 'gelery.scss';
+@import 'work-location.scss';
+@import 'footer.scss';
+html {
+   scroll-behavior: smooth;
+}
+body {
+   //background: #000;
+
+   //overflow: hidden;
+
+   font-family: 'Lora', serif;
+   font-family: 'Playfair Display', serif;
+   font-family: 'Playfair Display SC', serif;
+   font-family: 'Cormorant Unicase', serif;
+   a {
+      color: inherit;
+   }
+}
+.dont-scroll {
+   overflow: hidden;
+}
+.wrapper {
+   overflow: hidden;
+   position: relative;
+}
+
+.anim {
+   transform: translateX(-20%);
+   transition: all 0.5s;
+   opacity: 0;
+}
+
+.active {
+   transform: translateX(0%);
+   opacity: 1;
+}
